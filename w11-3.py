@@ -1,0 +1,15 @@
+import tkinter as tk
+window = tk.Tk()
+window.title("Geometry Methods")
+window.geometry("400x300")
+frame1 = tk.Frame(window)
+frame1.pack(pady=10)
+tk.Label(frame1, text="Using pack()", bg="purple").pack()
+tk.Button(frame1, text="Pack Button").pack()
+frame2 = tk.Frame(window)
+frame2.pack(pady=10)
+tk.Label(frame2, text="Grid 1", bg="lightpink").grid(row=0, column=0, padx=10, pady=10)
+tk.Label(frame2, text="Grid 2", bg="lightblue").grid(row=0, column=1, padx=10, pady=10)
+tk.Label(window, text="Using place()", bg="beige").place(x=150, y=220)
+window.mainloop()
+
